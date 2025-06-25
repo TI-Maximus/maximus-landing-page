@@ -16,7 +16,8 @@ const nextConfig: NextConfig = {
         *.googletagmanager.com
         *.doubleclick.net
         *.google.com
-        *.google.com.br;
+        *.google.com.br
+        *.facebook.com;
       font-src 'self' fonts.gstatic.com;
       connect-src 'self'
         *.google-analytics.com
