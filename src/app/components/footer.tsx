@@ -47,6 +47,14 @@ export default function Footer() {
                 <Phone className='w-4 h-4 mr-2' />
                 (99) 3524-0770
               </a>
+              <a
+                href='tel:(99) 3523-2127'
+                className='flex items-center text-gray-400 hover:text-blue-400 transition-colors'
+              >
+                <Phone className='w-4 h-4 mr-2' />
+                (99) 3523-2127
+              </a>
+              
             </li>
             <li>
               <a
