@@ -22,7 +22,8 @@ const nextConfig: NextConfig = {
         *.google-analytics.com
         *.analytics.google.com
         *.googletagmanager.com
-        *.doubleclick.net;
+        *.doubleclick.net
+        *.google.com;
       frame-src
         *.googletagmanager.com
         *.doubleclick.net;
