@@ -1,16 +1,31 @@
 import type { NextConfig } from 'next';
 
-
 const nextConfig: NextConfig = {
   async headers() {
     const csp = `
       default-src 'self';
-      script-src 'self' 'unsafe-inline' 'unsafe-eval' *.googletagmanager.com *.google-analytics.com *.gstatic.com *.facebook.net *.doubleclick.net;
+      script-src 'self' 'unsafe-inline' 'unsafe-eval'
+        *.googletagmanager.com
+        *.google-analytics.com
+        *.gstatic.com
+        *.facebook.net
+        *.doubleclick.net;
       style-src 'self' 'unsafe-inline' fonts.googleapis.com;
-      img-src 'self' data: *.google-analytics.com *.googletagmanager.com *.doubleclick.net;
+      img-src 'self' data:
+        *.google-analytics.com
+        *.googletagmanager.com
+        *.doubleclick.net
+        *.google.com
+        *.google.com.br;
       font-src 'self' fonts.gstatic.com;
-      connect-src 'self' *.google-analytics.com *.analytics.google.com *.googletagmanager.com *.doubleclick.net;
-      frame-src *.googletagmanager.com *.doubleclick.net;
+      connect-src 'self'
+        *.google-analytics.com
+        *.analytics.google.com
+        *.googletagmanager.com
+        *.doubleclick.net;
+      frame-src
+        *.googletagmanager.com
+        *.doubleclick.net;
       base-uri 'self';
       form-action 'self';
       object-src 'none';
